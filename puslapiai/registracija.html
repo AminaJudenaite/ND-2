@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="LT">
     <head>
+    <!-- meta žymės, pavadinimas, bootstrap karkasas ir css failai -->
     <meta charset="UTF-8">
     <meta name="description" content="Profesionalios anglų kalbos pamokos.">
     <meta name="keywords" content="Anglų kalbos kursai, Anglų kalbos pamokos">
@@ -12,26 +13,29 @@
 <body>
 
 <main>
+    <!-- pagrindinis tekstas -->
     <h2>Užsiregistruokite kursams</h2>
-    <form class="forma">
+    <form class="forma"> <!-- forma registracijai -->
         <label for="vardas">Vardas, Pavardė:</label>
-        <input type="text" id="vardas" required placeholder="Vardenis Pavardenis">
+        <input type="text" id="vardas" required placeholder="Vardenis Pavardenis"> <!-- vardo pavardės įvedimas -->
 
         <label for="pastas">El. paštas:</label>
-        <input type="email" id="pastas" required placeholder="vardenis.pavardenis@gmail.com">
+        <input type="email" id="pastas" required placeholder="vardenis.pavardenis@gmail.com"> <!-- el. pašto įvedimas -->
 
-        <label for="lygis">Jūsų anglų k. lygis:</label>
+        <label for="lygis">Jūsų anglų k. lygis:</label> <!-- žinių lygio pasirinkimas dropdown -->
         <select id="lygis">
             <option value="pradedantysis">Pradedantysis (A1-A2)</option>
             <option value="igudes">Įgudęs (B1-B2)</option>
             <option value="pazenges">Pažengęs (C1-C2)</option>
         </select>
 
-        <input type="submit" value="Registruotis">
-        <input type="reset" value="Atšaukti">
+        <input type="submit" value="Registruotis"> <!-- registracijos mygtukas -->
+        <input type="reset" value="Atšaukti"> <!-- atšaukimo mygtukas -->
     </form>
+    <!-- paveikslėlis -->
     <img style="width: 500px; border-radius: 10px;" src="../nuotraukos/ILoveEnglish.png" alt="Anglų kalbos kursai">
 
+    <!-- navigacijos juosta apačioje -->
     <div class="nuorodos">
         <a href="index.html">Pagrindinis</a>
         <a href="kursai.html">Kursai</a>
@@ -39,6 +43,7 @@
         <a href="kontaktai.html">Kontaktai</a>
     </div>
 </main>
+<!-- bootstrap karkasas -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-
 YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin=
 "anonymous"></script>

@@ -1,79 +1,94 @@
+/* lentelė užima 80% pločio, margin viršuj ir apačioj 20px o šonuose centruoja automatiškai, sujungia lentelės kraštines */
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
 }
 
+/* fono spalva, teksto spalva, vidiniai tarpai */
 th {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color); /* naudojamas variable fono spalvai */
     color:white;
     padding: 15px;
 }
 
+/* vidiniai tarpai, tekstas centruojamas */
 td {
     padding: 12px;
     text-align: center;
 }
 
+/* naudojamas flexbox išdėstymas, išdėstoma stulpeliu, tarpai tarp elementų, maksimalus formos plotis, margin viršuj ir apačioj 0px o šonuose centruoja automatiškai */
 .forma {
     display: flex;
     flex-direction: column;
     gap: 15px;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
+/* tekstas kairėje, pašalinami sąrašo ženklai, vidiniai tarpai, fono spalva, spalvota juosta kairėje, suapvalinti kampai, maksimalus sąrašo plotis, centruojamas blokas su margin 0 viršuj ir apačioj */
 .privalumai {
     text-align: left;
     list-style: none;
     padding: 20px;
     background-color: #d6efff;
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid var(--primary-color); /* naudojamas variable  spalvai */
     border-radius: 4px;
     max-width: 600px;
     margin: 20px auto;
 }
 
+/* tarpai tarp sąrašo elementų viršuj apačioj 10px o šonuose 0, šrifto dydis */
 .privalumai li {
     padding: 10px 0;
     font-size: 18px;
 }
 
-
+/* pridedamas sąrašo elementų simbolis, boldintas tekstas, simbolio spalva, tarpas tarp simbolio ir teksto */
 .privalumai li::before {
     content: "✦";
     font-weight: bold;
     color: var(--primary-color);
     margin-right: 12px;
-    display: inline-block;
 }
 
+/* paveikslelio rodymas kaip bloko, centruojama paliekant margin viršuj apačioj po 20px */
 img {
     display: block;
     margin: 20px auto;
 }
 
+/* centruojama antraštė */
 main h3 {
     text-align: center;
 }
 
+/* rėmelio spalva, boldintas tekstas */
 table, th, td {
     border: 1px solid #ffd6d6;
     font-weight: bold;
 }
 
+/* rėmelio spalva, vidiniai tarpai */
 input[type="text"] { 
-    border: 2px solid #2500f8; padding: 10px; 
+    border: 2px solid #2500f8; 
+    padding: 10px; 
 }
 
+/* rėmelio spalva, vidiniai tarpai */
 input[type="email"] { 
-    border: 2px solid #2500f8; padding: 10px; 
+    border: 2px solid #2500f8; 
+    padding: 10px; 
 }
 
+/* rėmelio spalva, vidiniai tarpai */
 select { 
-    border: 2px solid #2500f8; padding: 10px; 
+    border: 2px solid #2500f8; 
+    padding: 10px; 
 } 
 
+/* mygtuko fonas, teksto spalva, pašalinamas rėmelis, vidiniai tarpai, pelės žymėklis, boldintas tekstas */
 input[type="submit"] {
     background-color: #2500f8;
     color: white;
@@ -83,9 +98,10 @@ input[type="submit"] {
     font-weight: bold;
 }
 
+/* mygtuko fonas, teksto spalva, pašalinamas rėmelis, vidiniai tarpai, pelės žymėklis, boldintas tekstas */
 input[type="reset"] {
     background-color: #8aafff;
-    color: #ffffff;
+    color: white;
     border: none;
     padding: 12px;
     cursor: pointer;

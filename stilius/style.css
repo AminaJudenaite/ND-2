@@ -1,19 +1,21 @@
-@import url('variables.css');
+@import url('variables.css'); /* importuojamas variables.css failas */
 
+/* pagrindinis šriftas, pagrindinė fono spalva, pagrindinė teksto spalva */
 body {
-    font-family: 'Times New Roman', serif;
-    margin: 0;
+    font-family: 'Times New Roman', serif; 
     background-color: #f4f7f6;
     color: #333;
 }
 
+/* fono spalva, teksto spalva, vidinių tarpų nustatymas, centruojamas tekstas */
 header {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* naudojamas variable fono spalvai */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
+/* pašalinami sąrašo ženklai, flexbox išdėstymas, centruojami elementai, tarpai tarp elementų */
 nav ul {
     list-style: none;
     display: flex;
@@ -21,6 +23,7 @@ nav ul {
     gap: 60px;
 }
 
+/* nuorodų spalva, pašalinamas teksto pabraukimas, boldintas tekstas, šrifto dydis nustatomas */
 nav a {
     color: white;
     text-decoration: none;
@@ -28,10 +31,12 @@ nav a {
     font-size: 18px;
 }
 
+/* spalvos pakeitimas užvedus */
 nav a:hover {
     color: #8ec0f8;
 }
 
+/* maksimalus turinio plotis, margin viršuj ir apačioj po 30px o šonuose centruoja automatiškai, fono spalva, vidiniai tarpai, suapvalinti kampai, šešėlis */
 main {
     max-width: 1000px;
     margin: 30px auto;
@@ -40,17 +45,21 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 50px rgba(38, 16, 236, 0.1);
 }
+
+/* centruojama antraštė, tarpas po antrašte */
 main h2 {
     text-align: center;
     padding-bottom: 20px;
 }
 
+/* tekstas centruojamas, šrifto dydis, tarpas virš teksto */
 main p {
     text-align: center;
     font-size: 15px;
     padding-top: 10px;
 }
 
+/* tekstas centruojamas, šrifto dydis, teksto spalva, boldintas tekstas */
 main div{
     text-align: center;
     font-size: 20px;
